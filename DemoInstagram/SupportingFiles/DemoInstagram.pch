@@ -1,0 +1,32 @@
+//
+//  DemoInstagram.pch
+//  DemoInstagram
+//
+//  Created by Anatoliy Afanasev on 12/12/15.
+//  Copyright © 2015 Anatoliy Afanasev. All rights reserved.
+//
+
+#ifndef DemoInstagram_pch
+#define DemoInstagram_pch
+
+#import "UIColor+DIColors.h"
+#import "NSString+DISize.h"
+#import <libextobjc/EXTScope.h>
+#import "DIBlockConstants.h"
+#import "DILoadDataState.h"
+#import "DIErrorHandler.h"
+
+
+#import <ReactiveCocoa/RACSubscriptingAssignmentTrampoline.h>
+#import <ReactiveCocoa/RACSignal.h>
+#import <ReactiveCocoa/UITextField+RACSignalSupport.h>
+#import <ReactiveCocoa/RACSignal+Operations.h>
+#import <ReactiveCocoa/NSObject+RACPropertySubscribing.h>
+
+static NSString *const kRedirectUrl = @"demoapp://oauthredirect.ios";
+@import MapKit;
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* DemoInstagram_pch */

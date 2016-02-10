@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="HTj-am-Rn2" customClass="DIProfileView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ava" translatesAutoresizingMaskIntoConstraints="NO" id="rDU-lm-nfB">
+                    <rect key="frame" x="15" y="250" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="lue-2T-jbu"/>
+                        <constraint firstAttribute="height" constant="100" id="nog-Yj-Wfd"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFW-iY-k85">
+                    <rect key="frame" x="115" y="0.0" width="485" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jE-fJ-omx" customClass="DIProfileCounterButton">
+                            <rect key="frame" x="0.0" y="0.0" width="161.5" height="600"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSd-iV-qvf">
+                                    <rect key="frame" x="0.0" y="0.0" width="161.5" height="600"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="aSd-iV-qvf" firstAttribute="top" secondItem="1jE-fJ-omx" secondAttribute="top" id="SpW-H0-7eO"/>
+                                <constraint firstAttribute="trailing" secondItem="aSd-iV-qvf" secondAttribute="trailing" id="aEA-XT-egu"/>
+                                <constraint firstItem="aSd-iV-qvf" firstAttribute="leading" secondItem="1jE-fJ-omx" secondAttribute="leading" id="qfi-uW-a60"/>
+                                <constraint firstAttribute="bottom" secondItem="aSd-iV-qvf" secondAttribute="bottom" id="x27-Av-NTc"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="label" destination="aSd-iV-qvf" id="Xws-Hl-4Xk"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbz-l9-tlK" customClass="DIProfileCounterButton">
+                            <rect key="frame" x="161.5" y="0.0" width="162" height="600"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sW1-w8-DUV">
+                                    <rect key="frame" x="0.0" y="0.0" width="162" height="600"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="sW1-w8-DUV" secondAttribute="trailing" id="HSt-ZD-zdm"/>
+                                <constraint firstItem="sW1-w8-DUV" firstAttribute="top" secondItem="hbz-l9-tlK" secondAttribute="top" id="Jag-yc-mvp"/>
+                                <constraint firstItem="sW1-w8-DUV" firstAttribute="leading" secondItem="hbz-l9-tlK" secondAttribute="leading" id="PEE-yX-qqI"/>
+                                <constraint firstAttribute="bottom" secondItem="sW1-w8-DUV" secondAttribute="bottom" id="kSv-ob-Sk8"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="label" destination="sW1-w8-DUV" id="76E-KE-dWA"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="er0-zo-463" customClass="DIProfileCounterButton">
+                            <rect key="frame" x="323.5" y="0.0" width="161.5" height="600"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5g-kw-9km">
+                                    <rect key="frame" x="0.0" y="0.0" width="161.5" height="600"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="q5g-kw-9km" firstAttribute="top" secondItem="er0-zo-463" secondAttribute="top" id="4ge-Xc-Lae"/>
+                                <constraint firstItem="q5g-kw-9km" firstAttribute="leading" secondItem="er0-zo-463" secondAttribute="leading" id="Kbg-2b-Pd1"/>
+                                <constraint firstAttribute="trailing" secondItem="q5g-kw-9km" secondAttribute="trailing" id="Tcg-Ad-3gR"/>
+                                <constraint firstAttribute="bottom" secondItem="q5g-kw-9km" secondAttribute="bottom" id="aFp-02-zAD"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="label" destination="q5g-kw-9km" id="UEl-Oz-Ckz"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="1jE-fJ-omx" secondAttribute="bottom" id="6tz-aN-4lO"/>
+                        <constraint firstAttribute="trailing" secondItem="er0-zo-463" secondAttribute="trailing" id="8H1-kF-fQC"/>
+                        <constraint firstItem="er0-zo-463" firstAttribute="top" secondItem="HFW-iY-k85" secondAttribute="top" id="8cY-F8-uI2"/>
+                        <constraint firstItem="er0-zo-463" firstAttribute="leading" secondItem="hbz-l9-tlK" secondAttribute="trailing" id="Dt0-kb-Wbu"/>
+                        <constraint firstItem="hbz-l9-tlK" firstAttribute="width" secondItem="1jE-fJ-omx" secondAttribute="width" id="Kas-QA-218"/>
+                        <constraint firstItem="1jE-fJ-omx" firstAttribute="top" secondItem="HFW-iY-k85" secondAttribute="top" id="Rc5-XN-ZDs"/>
+                        <constraint firstItem="er0-zo-463" firstAttribute="width" secondItem="1jE-fJ-omx" secondAttribute="width" id="bI6-Nd-xzg"/>
+                        <constraint firstAttribute="bottom" secondItem="er0-zo-463" secondAttribute="bottom" id="dCD-bK-2zR"/>
+                        <constraint firstItem="hbz-l9-tlK" firstAttribute="top" secondItem="HFW-iY-k85" secondAttribute="top" id="e65-Nc-RE1"/>
+                        <constraint firstItem="hbz-l9-tlK" firstAttribute="leading" secondItem="1jE-fJ-omx" secondAttribute="trailing" id="es0-Bu-fSY"/>
+                        <constraint firstAttribute="bottom" secondItem="hbz-l9-tlK" secondAttribute="bottom" id="gjp-54-TRl"/>
+                        <constraint firstItem="1jE-fJ-omx" firstAttribute="leading" secondItem="HFW-iY-k85" secondAttribute="leading" id="uQj-an-9y6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HFW-iY-k85" firstAttribute="leading" secondItem="rDU-lm-nfB" secondAttribute="trailing" id="CFO-6r-Two"/>
+                <constraint firstItem="rDU-lm-nfB" firstAttribute="centerY" secondItem="HTj-am-Rn2" secondAttribute="centerY" id="HuD-pc-aqP"/>
+                <constraint firstItem="rDU-lm-nfB" firstAttribute="leading" secondItem="HTj-am-Rn2" secondAttribute="leading" constant="15" id="KwQ-KJ-w43"/>
+                <constraint firstAttribute="trailing" secondItem="HFW-iY-k85" secondAttribute="trailing" id="Qj2-Rp-p9u"/>
+                <constraint firstAttribute="bottom" secondItem="HFW-iY-k85" secondAttribute="bottom" id="S6b-no-WJG"/>
+                <constraint firstItem="HFW-iY-k85" firstAttribute="top" secondItem="HTj-am-Rn2" secondAttribute="top" id="dcW-AO-xa3"/>
+            </constraints>
+            <connections>
+                <outlet property="counterFollowers" destination="hbz-l9-tlK" id="VYF-Yg-ry1"/>
+                <outlet property="counterFollowings" destination="er0-zo-463" id="9YX-qi-lPd"/>
+                <outlet property="counterPosts" destination="1jE-fJ-omx" id="zJh-YB-kgU"/>
+                <outlet property="imageView" destination="rDU-lm-nfB" id="JjK-kh-an1"/>
+            </connections>
+            <point key="canvasLocation" x="168" y="287"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ava" width="100" height="100"/>
+    </resources>
+</document>

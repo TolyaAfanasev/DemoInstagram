@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DIBaseFollowTableViewCell" rowHeight="60" id="OTQ-MW-1rz" customClass="DIBaseFollowTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OTQ-MW-1rz" id="ldi-N4-pNd">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M4s-gG-J26">
+                        <rect key="frame" x="8" y="5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="M4s-gG-J26" secondAttribute="height" multiplier="1:1" id="Zq9-O5-opm"/>
+                            <constraint firstAttribute="width" constant="50" id="kvh-9R-SIV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDR-1Y-XUs">
+                        <rect key="frame" x="66" y="0.0" width="254" height="59.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="kDR-1Y-XUs" secondAttribute="bottom" id="FSB-76-uug"/>
+                    <constraint firstAttribute="trailing" secondItem="kDR-1Y-XUs" secondAttribute="trailing" id="LZU-w7-4Hd"/>
+                    <constraint firstItem="kDR-1Y-XUs" firstAttribute="top" secondItem="ldi-N4-pNd" secondAttribute="top" id="eR1-5k-DZV"/>
+                    <constraint firstItem="kDR-1Y-XUs" firstAttribute="leading" secondItem="M4s-gG-J26" secondAttribute="trailing" constant="8" id="fEA-Xh-iQe"/>
+                    <constraint firstItem="M4s-gG-J26" firstAttribute="centerY" secondItem="ldi-N4-pNd" secondAttribute="centerY" id="mFl-o3-TSR"/>
+                    <constraint firstItem="M4s-gG-J26" firstAttribute="leading" secondItem="ldi-N4-pNd" secondAttribute="leading" constant="8" id="vFg-aO-laq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageAvatar" destination="M4s-gG-J26" id="bE7-tA-Dbd"/>
+                <outlet property="labelUsername" destination="kDR-1Y-XUs" id="g26-Zd-rTu"/>
+            </connections>
+            <point key="canvasLocation" x="343" y="361"/>
+        </tableViewCell>
+    </objects>
+</document>

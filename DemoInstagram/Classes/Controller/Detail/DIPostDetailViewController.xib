@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DIPostDetailViewController">
+            <connections>
+                <outlet property="bottomPanel" destination="j8A-uU-lTg" id="GRq-Wb-jGg"/>
+                <outlet property="bottomPanelBottomConstraint" destination="zGt-A2-SBh" id="8NW-WW-VYb"/>
+                <outlet property="postCommentButton" destination="uGW-wT-LzX" id="MJd-eY-UoR"/>
+                <outlet property="postCommentTextField" destination="mt0-qc-F6K" id="Vsk-1t-pJo"/>
+                <outlet property="table" destination="7QY-oS-fsc" id="ggn-dU-ubg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8A-uU-lTg">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mt0-qc-F6K">
+                            <rect key="frame" x="8" y="7" width="516" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="pSF-ZB-i9k"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGW-wT-LzX" customClass="DIButton">
+                            <rect key="frame" x="532" y="7" width="60" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="V8t-HI-Jag"/>
+                                <constraint firstAttribute="height" constant="30" id="e4N-gZ-eNs"/>
+                            </constraints>
+                            <state key="normal" title="POST"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="bordered" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderCornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="postButtonClick:" destination="-1" eventType="touchUpInside" id="ggA-5u-KCF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="uGW-wT-LzX" firstAttribute="leading" secondItem="mt0-qc-F6K" secondAttribute="trailing" constant="8" id="Gb4-sE-nKr"/>
+                        <constraint firstAttribute="trailing" secondItem="uGW-wT-LzX" secondAttribute="trailing" constant="8" id="Hfy-gO-Dyr"/>
+                        <constraint firstItem="mt0-qc-F6K" firstAttribute="leading" secondItem="j8A-uU-lTg" secondAttribute="leading" constant="8" id="VLL-GO-OFS"/>
+                        <constraint firstAttribute="height" constant="44" id="Ya0-Au-hzt"/>
+                        <constraint firstItem="mt0-qc-F6K" firstAttribute="centerY" secondItem="j8A-uU-lTg" secondAttribute="centerY" id="kgh-Y6-XaC"/>
+                        <constraint firstItem="uGW-wT-LzX" firstAttribute="centerY" secondItem="j8A-uU-lTg" secondAttribute="centerY" id="pCT-M3-3Oh"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="7QY-oS-fsc">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="separatorColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Wzc-RH-FXi"/>
+                        <outlet property="delegate" destination="-1" id="jtb-Fl-Ghz"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7QY-oS-fsc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GVD-qo-XN6"/>
+                <constraint firstItem="j8A-uU-lTg" firstAttribute="top" secondItem="7QY-oS-fsc" secondAttribute="bottom" id="X1k-Uo-4RU"/>
+                <constraint firstAttribute="trailing" secondItem="7QY-oS-fsc" secondAttribute="trailing" id="eXz-hX-RNy"/>
+                <constraint firstItem="7QY-oS-fsc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rhP-X1-Sbl"/>
+                <constraint firstAttribute="trailing" secondItem="j8A-uU-lTg" secondAttribute="trailing" id="wJQ-p4-USc"/>
+                <constraint firstItem="j8A-uU-lTg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xLT-F2-tc6"/>
+                <constraint firstAttribute="bottom" secondItem="j8A-uU-lTg" secondAttribute="bottom" id="zGt-A2-SBh"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
